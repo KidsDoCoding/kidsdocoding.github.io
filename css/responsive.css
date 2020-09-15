@@ -1,0 +1,139 @@
+@media screen and (max-width: 1200px) {
+    #sidebar {
+        display: none;
+    }
+    #timebar {
+        position: static;
+        display: block;
+        width: 320px;
+        height: 90px;
+        margin: 50px auto 0 auto;
+    }
+}
+@media screen and (max-width: 1024px) {
+    h1:hover {
+        letter-spacing: 0;
+    }
+    #signupbutton h1 {
+        margin: 0;
+    }
+    .padspace {
+        height: 90px;
+    }
+    .bpad {
+        height: 45px;
+    }
+    footer
+    {
+        position: relative;
+    }
+    #splashscreen .firstbanner img {
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        filter: none;
+    }
+    #splashscreen .firstbanner img:hover {
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        filter: none;
+    }
+    .schedule h5 {
+        font-size: 1.45em;
+        text-align: center;
+    }
+    #about #map {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .banner {
+        background-attachment: local;
+    }
+}
+@media screen and (max-width: 950px) {
+    #organizers .person {
+        width: 33.33%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #about .schedule {
+        width: 90%;
+        margin: 1% 5%;
+    }
+    .faqcolumn {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .rule {
+        height: 60px;
+    }
+    #special
+    {
+        font-size: 6em;
+    }
+}
+@media screen and (max-width: 575px) {
+    html {
+        font-size: .565em;
+    }
+    p,
+    h5,
+    #organizers p,
+    #organizers h5,
+    .schedule h5 {
+        font-size: 2em;
+    }
+    #organizers .person {
+        width: 50%;
+    }
+    header {
+        height: 32px;
+    }
+    header .link {
+        height: 32px;
+    }
+    header .link img {
+        height: 100%;
+        width: auto;
+    }
+    .padspace {
+        height: 60px;
+    }
+    .bpad {
+        height: 32px;
+    }
+    .rule {
+        height: 80px;
+    }
+    #timebar {
+        width: 80%;
+        margin-left: 10%;
+        height: 50px;
+    }
+    #timebar div {
+        width: 20%;
+        margin: 0% 2.5%;
+        height: 50px;
+    }
+    .rule p {
+        width: 80%;
+    }
+    #about .details {
+        padding: 30px 0;
+    }
+    .storelink {
+        width: 20%;
+        margin: 0 2.1%;
+        max-width: 100px;
+    }
+    #evlink
+    {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 575px) and (orientation: landscape) {
+    #splashscreen .firstbanner img {
+        margin-top: 0.5%;
+    }
+}

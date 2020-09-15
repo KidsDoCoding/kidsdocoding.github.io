@@ -1,0 +1,879 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html, button, input, select, textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio, canvas, img, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ===== Button Styles ==================================================
+   Author: Richard Luo
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+button.snip0059 {
+    font-family: 'Raleway', Arial, sans-serif;
+    border: none;
+    background-color: #000000;
+    border-radius: 3px;
+    box-shadow: 0 4px 12px #49c5ff;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    padding: 2vh 3vw;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.3vw;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+button.snip0059:before {
+    content: '';
+    display: block;
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    background-color: #ffffff;
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+button.snip0059:hover, button.snip0059.hover {
+    color: #ffffff;
+    -webkit-animation: flashText 0.5s;
+    animation: flashText 0.5s;
+}
+
+button.snip0059:hover:before, button.snip0059.hover:before {
+    left: 12px;
+    right: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
+}
+
+button.snip0059:active:before {
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+button.snip0059.blue {
+    background-color: #49c5ff;
+}
+
+@-webkit-keyframes flashText {
+    0% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes flashText {
+    0% {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 1vw/1vw Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container, .main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container, .footer-container, .main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover, nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/********************************************
+General Styling
+********************************************/
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: kankin;
+    src: url("../fonts/Kankin.otf");
+}
+
+@font-face {
+    font-family: corbert;
+    src: url("../fonts/Corbert.otf");
+}
+
+@font-face {
+    font-family: langdon;
+    src: url("../fonts/Langdon.otf");
+}
+
+@font-face {
+    font-family: urbanelegance;
+    src: url("../fonts/UrbanElegance.ttf");
+}
+
+@font-face {
+    font-family: psans;
+    src: url("../fonts/ProductSans.ttf");
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: corbert;
+    font-weight: inherit;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    font-family: langdon;
+    font-size: 6.854em;
+    font-size: 4vw;
+    margin-top: -.45em;
+    letter-spacing: 0;
+    width: 100%;
+}
+
+h1:hover {
+    letter-spacing: .05em;
+    text-shadow: 2px 2px 0 #e3cd3b;
+}
+
+h2 {
+    font-family: kankin;
+    font-size: 4.236em;
+    font-size: 4.236vw;
+}
+
+h3 {
+    font-size: 2.618em;
+    font-size: 2.618vw;
+}
+
+h4 {
+    font-size: 2.05em;
+    font-size: 2.05vw;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.75em;
+    font-family: urbanelegance, sans-serif;
+}
+
+small, .font_small {
+    font-size: 0.618em;
+    margin: 0;
+}
+
+a {
+    -webkit-transition: all .25s;
+    transition: all .25s ease-in;
+    margin: 0;
+    color: #0066ff;
+    text-decoration: none;
+}
+
+h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover {
+    text-decoration: underline #0066ff;
+    letter-spacing: 0.05em;
+}
+
+h1 a {
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #95a5a6;
+}
+
+h1 a:hover {
+    color: inherit;
+    text-shadow: 2px 2px 0 #e3cd3b;
+}
+
+li {
+    text-align: left;
+}
+
+p {
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    font-family: psans, sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#marker {
+    position: absolute;
+    top: 0px;
+}
+
+input, select, textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08) inset;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-family: psans, sans-serif;
+    font-size: 1.2em;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 1px solid rgb(103, 0, 255);
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    padding: 10px 30px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    font-size: 1.25em;
+}
+
+.btn:hover {
+    background: rgb(90, 10, 255);
+    color: #F0DB4F;
+    text-decoration: none;
+}
+
+.scrollr {
+    width: 100%;
+}
+
+.scrollr img {
+    height: 45px;
+    margin: 1px;
+    display: inherit;
+}
+
+.scrollr .left, .scrollr .right {
+    transition: all .25s;
+    width: 45%;
+    margin: 0px 2.5%;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.scrollhover:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.scrollr .left {
+    float: left;
+}
+
+.scrollr .left img {
+    margin-left: 8.5%;
+}
+
+.scrollr .right {
+    float: right;
+}
+
+.scrollr .right img {
+    margin-left: 72.5%;
+}
+
+/********************************************
+Centering Styling
+********************************************/
+
+.outerN {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middleN {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.innerN {
+    width: 100%;
+}
+
+/********************************************
+Header Styling
+********************************************/
+
+header {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(90, 26, 122);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    box-shadow: 0px 2px 0px #421a7a;
+    z-index: 3;
+}
+
+header img {
+    position: relative -webkit-transition all .25s;
+    transition: all .25s;
+    background-color: rgb(103, 0, 255);
+    height: 13vh;
+    padding: 0px 10px;
+    border: 5px solid #421a7a;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+header img:hover {
+    background-color: rgb(90, 10, 255);
+}
+
+header .navlink, #dropdown .navlink {
+    display: inline-block;
+    margin: 0px 2vw;
+    padding: 1vh;
+    vertical-align: top;
+    margin-top: 1vh;
+    color: #e3cd3b;
+    text-decoration: none;
+}
+
+header .navlink:hover, #dropdown .navlink:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 0px #333;
+    box-shadow: 2px 2px 0px #333;
+    border-radius: 5px;
+}
+
+#dropdown {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    width: 97.5%;
+    max-width: 1000px;
+    height: 130px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    background-color: rgb(177, 122, 230);
+    box-shadow: 3px 0px 0px #421a7a;
+    border-left: 3px solid #421a7a;
+    border-bottom: 3px solid #421a7a;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+/********************************************
+Footer Styling
+********************************************/
+
+footer {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(90, 26, 122);
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    box-shadow: 0px -5px 0px #421a7a;
+    z-index: 3;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/********************************************
+Body Styling
+********************************************/
+
+#container {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 110px auto 40px auto;
+    width: 97.5%;
+    max-width: 1200px;
+    background-color: rgba(220, 220, 220, 0.95);
+    box-shadow: 3px 3px 0px #333;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+canvas {
+    display: block;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+}
+
+#logindiv p {
+    font-size: 1.25em;
+}
+
+/********************************************
+Member Page Styling
+********************************************/
+
+#loggedindiv .row {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+#loggedindiv .row h3 {
+    display: inline-block;
+    width: 49%;
+}
+
+#loggedindiv .row h4 {
+    width: 49%;
+    margin: .5% 0%;
+    display: inline-block;
+}
+
+#loggedindiv .box {
+    margin: 2% 2.5%;
+    padding: 2.5% 4.5%;
+}
+
+#loggedindiv #cola .box {
+    padding: 2.5% 4.5% 1.5% 4.5%;
+}
+
+#loggedindiv .box hr {
+    margin: 2% 0%;
+}
+
+#gear {
+    height: 31px;
+    margin: 1px 5px;
+}
+
+#settings {
+    margin: 1%;
+}
+
+#settingbox h5 {
+    display: inline-block;
+    margin-left: 2.5px;
+    margin-right: 20px;
+}
+
+#blog, #settings, #score {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    margin: 0;
+    color: #333333;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #e3cd3b;
+    cursor: pointer;
+}
+
+#blog:hover, #settings:hover, #score:hover {
+    color: #5a1a7a;
+    text-shadow: 2px 2px 0 #F0DB4F;
+}
+
+#loggedindiv #ongoing {
+    border-color: #00FFFF;
+}
+
+#loggedindiv #attended {
+    border-color: #00FF00;
+}
+
+#loggedindiv #missed {
+    border-color: #FF0000;
+}
+
+/********************************************
+Column Styling
+********************************************/
+
+#cola {
+    width: 47.5%;
+    float: left;
+    margin: 0% 1.25%;
+    box-sizing: border-box;
+}
+
+#colb {
+    width: 47.5%;
+    float: right;
+    margin: 0% 1.25%;
+    box-sizing: border-box;
+}
+
+#colc {
+    width: 90%;
+    margin: 0% 5%;
+    padding: 0% 5%;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 85%;
+    margin: 5vw auto;
+    padding: 2.5% 10%;
+    border: 3px solid #F0DB4F;
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: rgb(245, 245, 245);
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+    }
+    /* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+    nav ul li {
+        display: inline;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+    .header-container, .main aside {
+        box-shadow: 0 5px 10px #aaa;
+    }
+    /* ============
+    WIDE: Menu
+   ============ */
+    .title {
+        float: left;
+    }
+    nav {
+        float: right;
+        width: 38%;
+    }
+    /* ============
+    WIDE: Main
+   ============ */
+    .main article {
+        float: left;
+        width: 57%;
+    }
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    /* ===============
+    Maximal Width
+   =============== */
+    .wrapper {
+        width: 1026px;
+        /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p, h2, h4 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h4 {
+        page-break-after: avoid;
+    }
+}
