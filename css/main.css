@@ -49,9 +49,9 @@ textarea {
     padding: 0.2em 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Helvetica:400,500);
 button.snip0059 {
-    font-family: 'Raleway', Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     border: none;
     background-color: #000000;
     border-radius: 3px;
