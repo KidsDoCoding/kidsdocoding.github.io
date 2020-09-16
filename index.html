@@ -32,8 +32,8 @@
 <script>
     function scrollTop(){
         $("#scroll").click(function() {
-       $(window).scrollTop(0);
-     });
+        $("html").animate({ scrollTop: 0 }, "slow");
+        });
     }
 </script>
 
