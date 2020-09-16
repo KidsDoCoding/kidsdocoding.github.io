@@ -33,13 +33,11 @@
     $(document).scroll(function(){
 
         var scroll_pos = $(window).scrollTop()
-    if(scroll_pos > 10){
+        if(scroll_pos > 10){
 
         $('#button').click(function(){
-
-        // what code to enter here??
-
-
+            $("#button").on("click", function() {
+            $("body").scrollTop(0);
         });
 
     }
