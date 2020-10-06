@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body { 
+    margin: 0;
+    padding-top: 9.375em;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+}
+
+p {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 4px;
+    float: left;
+}
+
+#bottomhalf {
+  padding-bottom:20em;
+  z-index: 2;
+}
+
+h2 {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  float: left;
+}
+
+.slogan {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-mobile {
+    display: none; 
+}
+
+ .btn1 {
+    position: relative;
+    display: block;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Montserrat'; 
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 5em;
+    width: 60%; 
+    border: 4px solid #00CED1;
+    border-radius: 50px;
+    padding: 18px 60px;
+    text-transform: uppercase; 
+    overflow: hidden;
+    transition: 1s all ease;
+} 
+
+.btn1::before {
+    background: #40E0D0;
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    z-index: -1;
+    transition: all 0.6s ease; 
+}
+
+.btn1:hover::before {
+    height: 3000%;
+}  
+
+section {
+    list-style-type: none;
+} 
+
+.navbar {
+  overflow: hidden;
+  margin-left: -18px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  box-shadow: 0 2px 3px 0 rgba(0,0,0, 0.1);
+  background-color: white;
+  z-index: 9999;
+}
+
+.navbar a {
+  margin-top: 5px;
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  animation: splash 1s normal forwards ease-in-out;
+}
+
+.navbar a:hover {
+border-radius: 15px;
+background-color: rgb(0, 150, 255);
+color: white; 
+animation: hover 1s infinite alternate;
+}
+
+@keyframes splash {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes hover {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
