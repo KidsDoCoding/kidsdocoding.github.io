@@ -26,11 +26,30 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+#header {
+    background-color: rgb(0, 150, 255);
+    }
     
 </head>
 <body>
+    <div id="marker"></div>
+    <header id="header">
+        <a href="about.html" class="navlink"><h4>About/FAQ</h4></a>
+        <a href="index.html" class="navlink"><h4>Home</h4></a>
+        <a href="resources.html" class="navlink"><h4>Resources</h4></a>
+    </header>
+    <br><br>
+</body>
+</html>    
     
+</head>
+
+<body>
+
 <style>
+  /* ===== Parallax Styling ==================================================
+   ========================================================================== */
 
 body, html {
   height: 100%;
@@ -86,6 +105,7 @@ body, html {
     letter-spacing: .05em;
 }
 
+/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
@@ -93,11 +113,6 @@ body, html {
 }
 </style>
     
-<ul>
-    <li><a href="about.html" class="navlink"><h4>About/FAQ</h4></a>
-    <li><a href="index.html" class="navlink"><h4>Home</h4></a>
-    <li><a href="resources.html" class="navlink"><h4>Resources</h4></a>
-<ul>
     
 <div class="bgimg-1" >
   <div class="caption">
