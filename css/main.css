@@ -294,7 +294,7 @@ h1 {
 
 h1:hover {
     letter-spacing: .05em;
-    text-shadow: 2px 2px 0 #e3cd3b;
+    text-shadow: 2px 2px 0 #ffffff;
 }
 
 h2 {
@@ -346,7 +346,7 @@ h1 a {
 
 h1 a:hover {
     color: inherit;
-    text-shadow: 2px 2px 0 #e3cd3b;
+    text-shadow: 2px 2px 0 #ffffff;
 }
 
 li {
@@ -499,7 +499,7 @@ header .navlink, #dropdown .navlink {
     padding: 1vh;
     vertical-align: top;
     margin-top: 1vh;
-    color: #e3cd3b;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -633,7 +633,7 @@ Member Page Styling
     margin: 0;
     color: #333333;
     text-decoration: none;
-    text-shadow: 2px 2px 0 #e3cd3b;
+    text-shadow: 2px 2px 0 #ffffff;
     cursor: pointer;
 }
 
