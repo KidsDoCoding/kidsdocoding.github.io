@@ -3,138 +3,48 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
+* {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
+/* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #0096ff;
-  color: white;
-}
-
-.container {
-  padding: 0 12px;
-}
-
-.container::after, .row::after {
+/* Clear floats after the columns */
+.row:after {
   content: "";
-  clear: both;
   display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+  clear: both;
 }
 </style>
 </head>
 <body>
 
-<div class="about-section">
-  <h1>About Us Page</h1>
-    <p>Some text about who we are and what we do.</p>
-</div>
+<h2>Four Equal Columns</h2>
 
-<h2 style="text-align:center">Our Team</h2>
 <div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team1.jpg" alt="Persona Una 1" style="width:100%">
-      <div class="container">
-        <h2>Persona Una</h2>
-        <p class="title">idk</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
   </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team2.jpg" alt="Persona Dos" style="width:100%">
-      <div class="container">
-        <h2>Persona Dos</h2>
-        <p class="title">Art idk</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
   </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="Persona Tres" style="width:100%">
-      <div class="container">
-        <h2>Persona Tres</h2>
-        <p class="title">idk</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
   </div>
 </div>
 
-<div class="column">
-    <div class="card">
-      <img src="/w3images/team3.jpg" alt="Persona Cuatra" style="width:100%">
-      <div class="container">
-        <h2>Persona Cuatra</h2>
-        <p class="title">idk</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-    
 </body>
 </html>
