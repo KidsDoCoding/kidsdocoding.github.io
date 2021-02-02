@@ -965,6 +965,10 @@ animation: hover 1s infinite alternate;
 
 /* Scroll Down */
 
+body {
+  background: #ffffff00;
+}
+
 .scrolldown-wrapper {
 	left: 50%;
 	position: absolute;
