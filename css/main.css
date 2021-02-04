@@ -485,7 +485,7 @@ header img {
     height: 13vh;
     padding: 0px 10px;
     border: 5px solid #ffd700;
-    border-top: none;
+    border-top: 5px solid #ffd700;
     box-sizing: border-box;
 }
 
@@ -506,7 +506,7 @@ header .navlink, #dropdown .navlink {
 header .navlink:hover, #dropdown .navlink:hover {
     background-color: rgba(0, 0, 0, 0.6);
     text-shadow: 2px 2px 0px #333;
-    box-shadow: 2px 2px 0px #333;
+    box-shadow: 2px 2px 0px #ffd700;
     border-radius: 5px;
 }
 
